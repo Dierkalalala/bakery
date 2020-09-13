@@ -71,6 +71,10 @@ a {
         text-align: center;
         font-family: Gilroy, sans-serif;
         line-height: 15.43px;
+        transition: 0.2s linear all;
+        &:hover{
+          color: #fd6b0d;
+        }
       }
     }
   }
@@ -87,6 +91,12 @@ a {
   outline: none;
   border: 1px solid $main-color;
   font-family: Gilroy, sans-serif;
+  transition: 0.3s linear all;
+  &:hover{
+    border: 1px solid #fd6b0d;
+    background-color: #fff;
+    color: #fd6b0d;
+  }
 }
 
 .header-callback-button {
@@ -203,6 +213,9 @@ a {
   padding: 11px 8px;
   margin-top: 6px;
   font-size: 24px;
+  &:hover::after{
+    border-top-color: #fff;
+  }
 }
 
 .submit-form-button::after {
@@ -213,6 +226,7 @@ a {
   border: 40px solid transparent;
   border-top: 24px solid #fd6b0d;
   transform: translateX(50%);
+  transition: 0.3s linear all;
 }
 
 .garanties-items {
@@ -541,10 +555,18 @@ h2.inner-title.bezier-line-under {
 
 .swiper-button-next {
   right: 288px;
+  transition: 0.3s linear all;
+  &:hover{
+    transform: scale(1.1)
+  }
 }
 
 .swiper-button-prev {
   left: 289px;
+  transition: 0.3s linear all;
+  &:hover{
+    transform: scale(1.1)
+  }
 }
 
 .bakery-main-slider .swiper-button-next:after, .bakery-main-slider .swiper-container-rtl .swiper-button-prev:after {
@@ -727,6 +749,7 @@ h2.inner-title.bezier-line-under {
 .founder-presentation-card {
   max-width: 290px;
   margin: 0 auto 30px;
+  display: block;
 }
 
 .team-card-title {
@@ -772,10 +795,12 @@ h2.inner-title.bezier-line-under {
   .submit-form input {
     color: #272742;
     font-weight: 500;
+    font-size: 23px;
   }
 
   .submit-form input::placeholder {
     color: #272742;
+    font-size: 23px;
   }
 
   .terms-of-confidence {
@@ -783,6 +808,7 @@ h2.inner-title.bezier-line-under {
     font-size: 16px;
     padding: 6px 0;
     font-weight: 500;
+    line-height: 20.26px;
   }
 
   .submit-form {
@@ -866,4 +892,9 @@ h2.inner-title.bezier-line-under {
   color: #ffffff;
   text-align: center;
   display: block;
+  cursor: pointer;
+}
+#confidential-data{
+  display: none;
+  max-width: 80%;
 }
