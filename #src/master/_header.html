@@ -19,19 +19,31 @@
                 </a>
                 <nav class="header-navigation">
                     <ul class="d-flex align-items-start justify-content-around">
-                        <li><a href="#">КТО МЫ</a></li>
-                        <li><a href="#">ПРЕИМУЩЕСТВА
+                        <li><a href="#team">КТО МЫ</a></li>
+                        <li><a href="#adv">ПРЕИМУЩЕСТВА
                             ДЛЯ ИНВЕСТОРА</a></li>
-                        <li><a href="#">ФОТО <br>
+                        <li><a href="#photo">ФОТО <br>
                             ПЕКАРЕН</a></li>
-                        <li><a href="#">ГАРАНТИИ
+                        <li><a href="#guarantees">ГАРАНТИИ
                             ИНВЕСТОРА</a></li>
+                        <li>
+                            <a href="#contacts" class="header-callback-button default-button hidden-md">
+                                ЗАКАЗАТЬ ЗВОНОК
+                                8 800 700 40 32
+                            </a>
+                        </li>
                     </ul>
+
                 </nav>
-                <a href="javascript:;" class="header-callback-button default-button">
+                <a href="#contacts" class="header-callback-button header-sm-hidden-button default-button">
                     ЗАКАЗАТЬ ЗВОНОК
                     8 800 700 40 32
                 </a>
+                <div class="burger-wrapper">
+                    <div class="burger">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
             </div>
             <div class="header-main-content">
                 <h1 class="main-title">
@@ -44,7 +56,7 @@
                 </h3>
             </div>
             <div class="header-ending-row d-flex justify-content-between">
-                <a data-fancybox href="https://www.youtube.com/watch?v=uPmlAMMHsvk" class="header__lightbox__trigger" >
+                <a data-fancybox href="https://www.youtube.com/watch?v=uPmlAMMHsvk" class="header__lightbox__trigger">
                     <div class="header-lightbox-img-wrapper">
                         <img src="img/header/lightbox.png" alt="">
                     </div>
@@ -55,16 +67,16 @@
                     </div>
                 </a>
                 <div class="submit-form">
-                    <form>
+                    <form method="post">
                         <div>
                             <label>
-                                <input type="text" placeholder="Имя">
+                                <input type="text" placeholder="Имя" name="name">
                             </label>
                             <label>
-                                <input type="text" placeholder="Телефон">
+                                <input type="tel" placeholder="Телефон" name="tel">
                             </label>
                             <label>
-                                <input type="email" placeholder="Почта">
+                                <input type="email" placeholder="Почта" name="email">
                             </label>
                         </div>
                         <div class="terms-of-confidence">

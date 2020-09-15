@@ -19,19 +19,31 @@
                 </a>
                 <nav class="header-navigation">
                     <ul class="d-flex align-items-start justify-content-around">
-                        <li><a href="#">КТО МЫ</a></li>
-                        <li><a href="#">ПРЕИМУЩЕСТВА
+                        <li><a href="#team">КТО МЫ</a></li>
+                        <li><a href="#adv">ПРЕИМУЩЕСТВА
                             ДЛЯ ИНВЕСТОРА</a></li>
-                        <li><a href="#">ФОТО <br>
+                        <li><a href="#photo">ФОТО <br>
                             ПЕКАРЕН</a></li>
-                        <li><a href="#">ГАРАНТИИ
+                        <li><a href="#guarantees">ГАРАНТИИ
                             ИНВЕСТОРА</a></li>
+                        <li>
+                            <a href="#contacts" class="header-callback-button default-button hidden-md">
+                                ЗАКАЗАТЬ ЗВОНОК
+                                8 800 700 40 32
+                            </a>
+                        </li>
                     </ul>
+
                 </nav>
-                <a href="javascript:;" class="header-callback-button default-button">
+                <a href="#contacts" class="header-callback-button header-sm-hidden-button default-button">
                     ЗАКАЗАТЬ ЗВОНОК
                     8 800 700 40 32
                 </a>
+                <div class="burger-wrapper">
+                    <div class="burger">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
             </div>
             <div class="header-main-content">
                 <h1 class="main-title">
@@ -44,7 +56,7 @@
                 </h3>
             </div>
             <div class="header-ending-row d-flex justify-content-between">
-                <a data-fancybox href="https://www.youtube.com/watch?v=uPmlAMMHsvk" class="header__lightbox__trigger" >
+                <a data-fancybox href="https://www.youtube.com/watch?v=uPmlAMMHsvk" class="header__lightbox__trigger">
                     <div class="header-lightbox-img-wrapper">
                         <img src="img/header/lightbox.png" alt="">
                     </div>
@@ -55,16 +67,16 @@
                     </div>
                 </a>
                 <div class="submit-form">
-                    <form>
+                    <form method="post">
                         <div>
                             <label>
-                                <input type="text" placeholder="Имя">
+                                <input type="text" placeholder="Имя" name="name">
                             </label>
                             <label>
-                                <input type="text" placeholder="Телефон">
+                                <input type="tel" placeholder="Телефон" name="tel">
                             </label>
                             <label>
-                                <input type="email" placeholder="Почта">
+                                <input type="email" placeholder="Почта" name="email">
                             </label>
                         </div>
                         <div class="terms-of-confidence">
@@ -98,7 +110,7 @@
 </header>
 
 <main>
-    <section class="advantages light-gray-bg">
+    <section id="adv" class="advantages light-gray-bg">
     <div class="container">
         <h2 class="inner-title bezier-line-under">
             ПОЧЕМУ ВЫГОДНО
@@ -106,7 +118,7 @@
         </h2>
         <div class="advantages-main-content">
             <div class="row justify-content-between">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <div class="advantages-card-wrap">
                         <div class="advantages-card-img">
                             <img src="img/advantages/cake.png" alt="">
@@ -125,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <div class="advantages-card-wrap">
                         <div class="advantages-card-img">
                             <img src="img/advantages/unity.png" alt="">
@@ -144,7 +156,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <div class="advantages-card-wrap">
                         <div class="advantages-card-img">
                             <img src="img/advantages/coffee.png" alt="">
@@ -162,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <div class="advantages-card-wrap">
                         <div class="advantages-card-img">
                             <img src="img/advantages/p-cake.png" alt="">
@@ -181,7 +193,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <div class="advantages-card-wrap">
                         <div class="advantages-card-img">
                             <img src="img/advantages/bakery.png" alt="">
@@ -200,7 +212,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <div class="advantages-card-wrap">
                         <div class="advantages-card-img">
                             <img src="img/advantages/bread.png" alt="">
@@ -350,7 +362,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <a href="#" class="default-button">
+                <a href="#contacts" class="default-button">
                     УЗНАТЬ БОЛЬШЕ
                 </a>
             </div>
@@ -359,7 +371,7 @@
 </section>
 
 
-    <section class="investments-guarantee light-gray-bg">
+    <section id="guarantees" class="investments-guarantee light-gray-bg">
     <div class="container">
         <h2 class="inner-title">
             ГАРАНТИИ ДЛЯ ИНВЕСТОРА
@@ -371,7 +383,7 @@
         <div class="investment-main-content">
             <div class="row align-items-start">
                 <div class="row col-lg-5">
-                    <div class="col-lg-6">
+                    <div class="col-6">
                         <div class="invest-card-wrap">
                             <div class="invest-card-img">
                                 <img src="img/advantages/cake.png" alt="">
@@ -391,7 +403,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-6">
                         <div class="invest-card-wrap">
                             <div class="invest-card-img">
                                 <img src="img/advantages/unity.png" alt="">
@@ -412,7 +424,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-6">
                         <div class="invest-card-wrap">
                             <div class="invest-card-img">
                                 <img src="img/advantages/p-cake.png" alt="">
@@ -433,7 +445,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-6">
                         <div class="invest-card-wrap">
                             <div class="invest-card-img">
                                 <img src="img/advantages/bread.png" alt="">
@@ -475,7 +487,7 @@
 </section>
 
 
-    <section class="bakery-slider bg-lined">
+    <section id="photo" class="bakery-slider bg-lined">
     <div class="container">
         <h2 class="inner-title">
             ПОСМОТРИТЕ НА НАШИ ПЕКАРНИ ВЖИВУЮ
@@ -489,43 +501,43 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide">
+                        <a data-fancybox href="img/slider/s11.jpg" class="swiper-slide">
                             <img src="img/slider/s11.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
+                        </a>
+                        <a href="img/slider/s12.jpg" data-fancybox class="swiper-slide">
                             <img src="img/slider/s12.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
+                        </a>
+                        <a href="img/slider/s1.jpg" data-fancybox class="swiper-slide">
                             <img src="img/slider/s1.jpg" alt="">
-                        </div>
+                        </a>
 
-                        <div class="swiper-slide">
+                        <a href="img/slider/s3.jpg" data-fancybox class="swiper-slide">
                             <img src="img/slider/s3.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
+                        </a>
+                        <a href="img/slider/s4.jpg" data-fancybox class="swiper-slide">
                             <img src="img/slider/s4.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
+                        </a>
+                        <a href="img/slider/s5.jpg" data-fancybox class="swiper-slide">
                             <img src="img/slider/s5.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
+                        </a>
+                        <a href="img/slider/s6.jpg" data-fancybox class="swiper-slide">
                             <img src="img/slider/s6.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
+                        </a>
+                        <a href="img/slider/s7.jpg" data-fancybox class="swiper-slide">
                             <img src="img/slider/s7.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
+                        </a>
+                        <a href="img/slider/s8.jpg" data-fancybox class="swiper-slide">
                             <img src="img/slider/s8.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
+                        </a>
+                        <a href="img/slider/s9.jpg" data-fancybox class="swiper-slide">
                             <img src="img/slider/s9.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
+                        </a>
+                        <a href="img/slider/s10.jpg" data-fancybox class="swiper-slide">
                             <img src="img/slider/s10.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
+                        </a>
+                        <a href="img/slider/s2.jpg" data-fancybox class="swiper-slide">
                             <img src="img/slider/s2.jpg" alt="">
-                        </div>
+                        </a>
                     </div>
 
                     <!-- If we need navigation buttons -->
@@ -539,7 +551,7 @@
             </div>
 
             <div class="text-center">
-                <a href="#" class="default-button">
+                <a href="#contacts" class="default-button">
                     ЗАПИСАТЬСЯ НА ВСТРЕЧУ
                 </a>
             </div>
@@ -556,7 +568,7 @@
 
         <div class="invest-reasons-main-content">
             <div class="row justify-content-center no-gutters">
-                <div class="col-lg-4 invest-reasons-card yellow-bg">
+                <div class="col-lg-4 invest-reasons-card yellow-bg col-md-6">
                     <div class="invest-reasons-card-body">
                         <div class="invest-reasons-card-title">
                             Масштабный рынок
@@ -569,10 +581,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="invest-reasons-card invest-reasons-card-img col-lg-4">
+                <div class="invest-reasons-card invest-reasons-card-img col-lg-4 col-md-6">
                     <img src="img/reasons/i1.jpg" alt="">
                 </div>
-                <div class="col-lg-4 invest-reasons-card yellow-bg">
+                <div class="col-lg-4 invest-reasons-card yellow-bg col-md-6">
                     <div class="invest-reasons-card-body">
                         <div class="invest-reasons-card-title">
                             Растущий рынок
@@ -584,10 +596,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="invest-reasons-card invest-reasons-card-img col-lg-4">
+                <div class="invest-reasons-card invest-reasons-card-img col-lg-4 col-md-6">
                     <img src="img/reasons/i2.jpg" alt="">
                 </div>
-                <div class="col-lg-4 invest-reasons-card purple-bg">
+                <div class="col-lg-4 invest-reasons-card purple-bg col-md-6">
                     <div class="invest-reasons-card-body">
                         <div class="invest-reasons-card-title">
                             Устойчивый рынок
@@ -600,7 +612,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="invest-reasons-card invest-reasons-card-img col-lg-4">
+                <div class="invest-reasons-card invest-reasons-card-img col-lg-4 col-md-6">
                     <img src="img/reasons/i3.jpg" alt="">
                 </div>
             </div>
@@ -667,7 +679,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="founder-presentations">
-                        <a href="#" class="founder-presentation-card">
+                        <a href="presentation.pdf" target="_blank" download class="founder-presentation-card">
                             <div class="founder-presentation-image-wrap">
                                 <img src="img/founder/f2.jpg" alt="">
                                 <img src="img/common/lock.png" class="founder-image-lock" alt="">
@@ -677,7 +689,7 @@
                             </div>
                         </a>
 
-                        <a href="#" class="founder-presentation-card">
+                        <a  href="financial-model.xlsx" target="_blank" download class="founder-presentation-card">
                             <div class="founder-presentation-image-wrap">
                                 <img src="img/founder/f3.jpg" alt="">
                                 <img src="img/common/lock.png" class="founder-image-lock" alt="">
@@ -695,14 +707,14 @@
 </section>
 
 
-    <section class="team bg-lined">
+    <section id="team" class="team bg-lined">
     <div class="container">
         <h2 class="inner-title bezier-line-under">
             КТО ЗА ВСЕ В ОТВЕТЕ
         </h2>
         <div class="team-main-content">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-6">
                     <div class="team-card-wrap">
                         <div class="team-card-image-wrap">
                             <img src="img/team/t1.png" alt="">
@@ -717,7 +729,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-6">
                     <div class="team-card-wrap">
                         <div class="team-card-image-wrap">
                             <img src="img/team/t2.png" alt="">
@@ -733,7 +745,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-6">
                     <div class="team-card-wrap">
                         <div class="team-card-image-wrap">
                             <img src="img/team/t3.png" alt="">
@@ -750,7 +762,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-6">
                     <div class="team-card-wrap">
                         <div class="team-card-image-wrap">
                             <img src="img/team/t4.png" alt="">
@@ -771,7 +783,7 @@
 </section>
 
 
-    <section class="contacts light-gray-bg">
+    <section id="contacts" class="contacts light-gray-bg">
     <div class="container">
         <h2 class="inner-title bezier-line-under">
             Хотите быть совладельцем крупной
@@ -781,16 +793,16 @@
         <div class="contacts-main-content">
             <div class="header-ending-row d-flex justify-content-center">
                 <div class="submit-form">
-                    <form>
+                    <form method="post">
                         <div>
                             <label>
-                                <input type="text" placeholder="Имя">
+                                <input name="name" type="text" placeholder="Имя">
                             </label>
                             <label>
-                                <input type="text" placeholder="Телефон">
+                                <input type="tel" name="tel" placeholder="Телефон">
                             </label>
                             <label>
-                                <input type="email" placeholder="Почта">
+                                <input type="email" name="email" placeholder="Почта">
                             </label>
                         </div>
                         <div class="terms-of-confidence">
@@ -821,7 +833,7 @@
 </main>
 <footer class="footer">
     <div class="container">
-        <div class="d-flex">
+        <div class="d-flex footer-links-container">
             <div class="footer-links-wrap">
                 <ul>
                     <li><a href="#">
@@ -968,6 +980,24 @@
     данных, обратившись к Оператору с помощью электронной почты privacy@thismywebsite·com. <br><br>
     8.2. В данном документе будут отражены любые изменения политики обработки персональных данных Оператором. Политика
     действует бессрочно до замены ее новой версией. <br><br>
+</div>
+
+<div class="thank-you-modal" id="thank-modal">
+    <h2 class="inner-title">
+        Спасибо за заявку
+    </h2>
+    <p>
+        Наш менеджер свяжется с вами в ближайшее время
+    </p>
+</div>
+
+<div class="fail-modal" id="failed-submit">
+    <h2 class="inner-title">
+        Упс.. Ошибочка
+    </h2>
+    <p>
+        Просим прощения за доставленные неудобства , но в данный момент мы не можем обработать вашу заявку, попробуйте отправить её позже
+    </p>
 </div>
 
 <script src="js/script.js"></script>

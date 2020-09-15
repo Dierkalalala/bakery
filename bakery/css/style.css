@@ -4327,6 +4327,10 @@ button.swiper-pagination-bullet {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: CoreRhino, sans-serif;
   font-size: 16px;
@@ -4374,6 +4378,28 @@ a {
 
 .white-colored {
   color: #fff;
+}
+
+.hidden-md {
+  display: none;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  outline: none;
+}
+
+.founder-image-wrap {
+  outline: none;
+}
+
+.submit-form label.error {
+  color: red;
+  font-size: 13px;
+}
+
+.submit-form form.has-error {
+  position: relative;
+  bottom: 20px;
 }
 
 .header-navigation ul li {
@@ -4905,6 +4931,10 @@ h2.inner-title.bezier-line-under:after {
   background-color: #ffb700;
 }
 
+.bakery-slider .swiper-slide {
+  outline: none;
+}
+
 .invest-reasons-card-title {
   font-size: 25px;
   font-weight: 900;
@@ -4945,11 +4975,6 @@ h2.inner-title.bezier-line-under:after {
 
 .invest-reasons-main-content {
   padding-bottom: 90px;
-}
-
-.invest-reasons-main-content .row .col-lg-4 {
-  flex: 0 0 29.333333%;
-  max-width: 29.333333%;
 }
 
 .gray-bg {
@@ -4998,10 +5023,19 @@ h2.inner-title.bezier-line-under:after {
   text-align: center;
 }
 
+.founder-image-wrap img {
+  transition: 0.3s linear all;
+}
+
+.founder-image-wrap img:hover {
+  transform: scale(1.1);
+}
+
 .founder-presentation-image-wrap {
   position: relative;
   margin: 0 auto;
   max-width: 247px;
+  overflow: hidden;
 }
 
 .founder-presentation-image-wrap:after {
@@ -5014,17 +5048,26 @@ h2.inner-title.bezier-line-under:after {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.founder-presentation-image-wrap:hover img {
+  transform: scale(1.1);
+}
+
+.founder-presentation-image-wrap:hover .founder-image-lock {
+  transform: translate(-50%, -50%) scale(1);
+}
+
 .founder-presentation-image-wrap img {
   display: block;
   margin: 0 auto;
   position: relative;
+  transition: 0.3s linear all;
 }
 
 .founder-presentation-image-wrap .founder-image-lock {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   z-index: 1;
 }
 
@@ -5179,6 +5222,24 @@ h2.inner-title.bezier-line-under:after {
 
 .footer-links-wrap ul li a img {
   margin-right: 10px;
+  position: relative;
+  top: 2px;
+}
+
+input[type="tel"]:hover::-moz-placeholder {
+  text-align: left;
+}
+
+input[type="tel"]:hover:-ms-input-placeholder {
+  text-align: left;
+}
+
+input[type="tel"]:hover::placeholder {
+  text-align: left;
+}
+
+.fail-modal h2, .thank-you-modal h2 {
+  margin-bottom: 10px;
 }
 
 .footer-politics {
@@ -5195,6 +5256,14 @@ h2.inner-title.bezier-line-under:after {
 #confidential-data {
   display: none;
   max-width: 80%;
+}
+
+.thank-you-modal {
+  display: none;
+}
+
+.fail-modal {
+  display: none;
 }
 
 body.compensate-for-scrollbar {
@@ -6012,5 +6081,394 @@ body.compensate-for-scrollbar {
   }
   .fancybox-thumbs__list a {
     max-width: calc(100% - 10px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .invest-reasons-main-content .row .col-lg-4 {
+    flex: 0 0 29.333333%;
+    max-width: 29.333333%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .swiper-button-next {
+    right: 238px;
+  }
+  .swiper-button-prev {
+    left: 236px;
+  }
+  .founder-presentations {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header-navigation {
+    position: fixed;
+    left: 0;
+    width: 300px;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: 0.3s linear all;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+  }
+  .header-navigation.active {
+    transform: translateX(0);
+  }
+  .main-title {
+    line-height: 50px;
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .header-beginning-block-wrap {
+    padding-bottom: 40px;
+  }
+  .header__lightbox__trigger {
+    bottom: 25px;
+    margin-bottom: 0px;
+    margin-right: 50px;
+  }
+  .garanties-items {
+    display: none;
+  }
+  .submit-form label {
+    margin-bottom: 20px;
+  }
+  .terms-of-confidence {
+    margin: 10px 0px;
+  }
+  .submit-form {
+    padding-top: 30px;
+  }
+  .header-ending-row {
+    justify-content: center !important;
+  }
+  .advantages-card-wrap {
+    text-align: center;
+  }
+  .conditionals-table {
+    text-align: center;
+  }
+  .conditionals-image-content {
+    margin-top: 50px;
+    position: relative;
+    right: 20px;
+  }
+  .invest-card-img {
+    margin-bottom: 10px;
+  }
+  .invest-card-wrap {
+    text-align: center;
+  }
+  .invest-image-text-wrap {
+    max-width: 100%;
+  }
+  .investment-image-wrap {
+    margin-top: 50px;
+  }
+  .swiper-button-next {
+    right: 10px;
+  }
+  .swiper-button-prev {
+    left: 10px;
+  }
+  .bakery-main-slider .swiper-container {
+    height: 250px;
+  }
+  .bakery-slider .swiper-slide.swiper-slide-active {
+    transform: scale(1) !important;
+  }
+  .about-business-content-wrap img {
+    margin: 0 auto;
+  }
+  .map-text {
+    left: 180px;
+  }
+  .founder-presentations {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  .founder-presentations {
+    display: flex;
+  }
+  .founder-presentation-image-wrap {
+    height: 133px;
+  }
+  .founder-presentation-button {
+    width: 280px;
+  }
+  .founder-image-wrap {
+    margin: 0 auto;
+    display: block;
+  }
+  .team-card-wrap {
+    margin-bottom: 30px;
+  }
+  .call-back-title {
+    font-size: 36px;
+    line-height: 37.19px;
+  }
+  .call-back-number {
+    font-size: 60px;
+  }
+  .footer-logotype-wrap {
+    max-width: 400px;
+  }
+  .footer-logotype-wrap img {
+    max-width: 100%;
+  }
+  .advantages h2.inner-title {
+    margin-bottom: 50px;
+  }
+  .header-navigation ul li a {
+    color: #fd6b0d;
+  }
+  .header-navigation ul {
+    flex-direction: column;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: auto;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .header-navigation ul li {
+    max-width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .header-navigation ul li::after {
+    content: '';
+    position: absolute;
+    top: 77%;
+    background-image: url(../img/common/bezier-line.png);
+    height: 15px;
+    width: 80px;
+    left: 0;
+    background-size: cover;
+  }
+  .header-navigation ul li a {
+    font-size: 16px;
+  }
+  .header-navigation ul br {
+    display: none;
+  }
+  .hidden-md {
+    display: block;
+  }
+  .header-sm-hidden-button {
+    display: none;
+  }
+  .main-subtitle {
+    font-size: 28px;
+    text-align: center;
+  }
+  .burger-wrapper .burger span:first-child {
+    width: 17px;
+    height: 2px;
+    background-color: #fff;
+    float: left;
+    margin-bottom: 7px;
+    display: block;
+  }
+  .burger-wrapper .burger span:nth-child(2) {
+    width: 26px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 7px;
+    display: block;
+  }
+  .burger-wrapper .burger span:nth-child(3) {
+    float: right;
+    width: 17px;
+    height: 2px;
+    margin-bottom: 7px;
+    display: block;
+    background-color: #fff;
+    text-align: right;
+    margin-left: auto;
+  }
+  .burger-wrapper .burger {
+    display: flex;
+    flex-direction: column;
+  }
+  .burger-wrapper .burger {
+    cursor: pointer;
+  }
+  .burger-wrapper span {
+    transition: 0.3s linear all;
+  }
+  .burger-wrapper.open .burger span:first-child {
+    width: 26px;
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+  .burger-wrapper.open .burger span:nth-child(3) {
+    width: 26px;
+    transform: rotate(-45deg) translate(3px, -3px);
+  }
+  .burger-wrapper.open .burger span:nth-child(2) {
+    opacity: 0;
+  }
+  .header-navigation ul li .header-callback-button {
+    color: #fff;
+    margin-left: 0;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .header-navigation ul li .header-callback-button::after {
+    display: none;
+  }
+  .header-navigation ul li:last-child::after {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-title {
+    line-height: 45px;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .header__lightbox__trigger {
+    display: none;
+  }
+  .header-ending-row {
+    padding-bottom: 60px;
+  }
+  .main-subtitle {
+    padding-bottom: 0;
+  }
+  h2.inner-title {
+    line-height: 34.34px;
+    font-size: 30px;
+  }
+  .advantages-card-title {
+    line-height: 16.59px;
+    font-size: 16px;
+  }
+  .advantages-card-text {
+    font-size: 12px;
+    line-height: 15.39px;
+  }
+  .conditionals-table-col {
+    padding-right: 15px;
+  }
+  .conditionals-image-content {
+    right: 0;
+  }
+  .bakery-image-additional-text {
+    display: none;
+  }
+  .bakery-marketplace-wrap {
+    justify-content: space-between;
+  }
+  .bakery-marketplace-card-title {
+    font-size: 15px;
+  }
+  .bakery-marketplace-card-wrap {
+    margin: 0;
+  }
+  .investment-main-content > .row {
+    margin: 0;
+  }
+  .investment-main-content > .row > .row {
+    margin: 0;
+  }
+  .investment-image-wrap img {
+    max-width: 100%;
+  }
+  .investment-image-wrap .invest-image-name {
+    font-size: 18px;
+    left: 8px;
+    top: 40px;
+  }
+  .investment-image-wrap .invest-image-text {
+    top: 70px;
+    left: 9px;
+  }
+  .bakery-slider .inner-title {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .bakery-slider .subtitle {
+    margin-bottom: 20px;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+  .bakery-slider-main-content {
+    padding-bottom: 50px;
+  }
+  .invest-reasons h2.inner-title {
+    margin-bottom: 60px;
+  }
+  .invest-reasons-card-text br {
+    display: none;
+  }
+  .about-business-content-wrap img {
+    max-width: 100%;
+  }
+  .about-business-content-wrap {
+    padding: 0;
+  }
+  .map-text {
+    left: 70px;
+    top: 110px;
+  }
+  .founder-image-wrap img {
+    max-width: 100%;
+  }
+  .founder-presentations {
+    flex-direction: column;
+  }
+  .team-card-image-wrap {
+    margin-bottom: 0px;
+    height: 200px;
+  }
+  .team-card-image-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .team-card-title {
+    margin-bottom: 5px;
+  }
+  .team-main-content {
+    padding-bottom: 20px;
+  }
+  .contacts h2.inner-title {
+    padding-top: 40px;
+    margin-bottom: 30px;
+  }
+  .submit-form input {
+    font-size: 16px;
+  }
+  .contacts .header-ending-row {
+    padding-bottom: 20px;
+  }
+  .call-back-title {
+    font-size: 28px;
+    padding-bottom: 15px;
+  }
+  .call-back-number {
+    font-size: 38px;
+  }
+  .footer-links-container {
+    flex-direction: column;
+  }
+  .footer-links-wrap {
+    margin-bottom: 30px;
+  }
+  .footer-logotype-wrap {
+    margin-bottom: 30px;
   }
 }

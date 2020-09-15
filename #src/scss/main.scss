@@ -6,7 +6,9 @@ $main-color: #fd6b0d;
   padding: 0;
   margin: 0;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: CoreRhino, sans-serif;
   font-size: 16px;
@@ -57,7 +59,23 @@ a {
 .white-colored {
   color: #fff;
 }
-
+.hidden-md{
+  display: none;
+}
+.swiper-button-next, .swiper-button-prev{
+  outline: none;
+}
+.founder-image-wrap{
+  outline: none;
+}
+.submit-form label.error{
+  color: red;
+  font-size: 13px;
+}
+.submit-form form.has-error{
+  position: relative;
+  bottom: 20px;
+}
 .header-navigation {
   ul {
     li {
@@ -597,6 +615,9 @@ h2.inner-title.bezier-line-under {
 
   }
 }
+.bakery-slider .swiper-slide{
+  outline: none;
+}
 
 .invest-reasons-card-title {
   font-size: 25px;
@@ -642,13 +663,6 @@ h2.inner-title.bezier-line-under {
 }
 
 .invest-reasons-main-content {
-  .row {
-    .col-lg-4 {
-      flex: 0 0 29.333333%;
-      max-width: 29.333333%;
-    }
-  }
-
   padding-bottom: 90px;
 }
 
@@ -698,13 +712,19 @@ h2.inner-title.bezier-line-under {
 
 .founder-image-wrap {
   text-align: center;
+  img{
+    transition: 0.3s linear all;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
 }
 
 .founder-presentation-image-wrap {
   position: relative;
   margin: 0 auto;
   max-width: 247px;
-
+  overflow: hidden;
   &:after {
     position: absolute;
     content: '';
@@ -714,18 +734,27 @@ h2.inner-title.bezier-line-under {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
   }
-
+  &:hover{
+    img{
+      transform: scale(1.1);
+    }
+    .founder-image-lock{
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
   img {
     display: block;
     margin: 0 auto;
     position: relative;
+    transition: 0.3s linear all;
+
   }
 
   .founder-image-lock {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     z-index: 1;
   }
 }
@@ -879,11 +908,22 @@ h2.inner-title.bezier-line-under {
         line-height: 24.67px;
         img{
           margin-right: 10px;
+          position: relative;
+          top: 2px;
         }
       }
     }
   }
 }
+input[type="tel"]:hover::placeholder{
+  text-align: left;
+}
+.fail-modal, .thank-you-modal{
+  h2{
+    margin-bottom: 10px;
+  }
+}
+
 .footer-politics{
   font-size: 19px;
   font-weight: 900;
@@ -897,4 +937,10 @@ h2.inner-title.bezier-line-under {
 #confidential-data{
   display: none;
   max-width: 80%;
+}
+.thank-you-modal{
+  display: none;
+}
+.fail-modal{
+  display: none;
 }
